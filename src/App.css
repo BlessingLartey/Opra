@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Newsss */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.hero {
+  background-image: url('./imghotel/hotelmain.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 45%;
+  padding-bottom: 5rem;
+
+}
