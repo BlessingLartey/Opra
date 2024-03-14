@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./component/home";
 import Contact from "./component/contact";
+import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Gallery from "./component/gallery";
 import NotFound from "./component/notFound";

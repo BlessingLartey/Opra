@@ -1,48 +1,108 @@
 import { Outlet, NavLink } from "react-router-dom";
+import Header from "./Header";
+// import "bootstrap/dist/css/bootstrap.css";
 
 export default function MainPageLayout() {
   return (
     <>
       <div className="landing">
-        <nav
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-          className="head-nav"
-        >
-          <span style={{ color: "blueviolet" }}>
-            <strong>ReactVites</strong>
-          </span>
-          <ul
-            style={{
-              display: "flex",
-              gap: "1rem",
-              justifyContent: "space-between",
-              alignItems: "center",
-              listStyle: "none",
-            }}
-          >
+        {/* <!-- Offcanvas Menu Section Begin --> */}
+        <div className="offcanvas-menu-overlay"></div>
+        <div className="canvas-open">
+          <i className="icon_menu">ji</i>
+        </div>
+        <div className="offcanvas-menu-wrapper">
+          <div className="canvas-close">
+            <i className="icon_close"></i>
+          </div>
+          <div className="search-icon  search-switch">
+            <i className="icon_search"></i>
+          </div>
+          <div className="header-configure-area">
+            <div className="language-option">
+              {/* <img src="img/flag.jpg" alt=""> */}
+              <span>
+                EN <i className="fa fa-angle-down"></i>
+              </span>
+              <div className="flag-dropdown">
+                <ul>
+                  <li>
+                    <a href="#">Zi</a>
+                  </li>
+                  <li>
+                    <a href="#">Fr</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" className="bk-btn">
+              Booking Now
+            </a>
+          </div>
+          <nav className="mainmenu mobile-menu">
+            <ul>
+              <li className="active">
+                <a href="./home.jsx">Home</a>
+              </li>
+              <li>
+                <a href="./gallery">Rooms</a>
+              </li>
+              <li>
+                <a href="./about-us">About Us</a>
+              </li>
+              <li>
+                <a href="./pages">Pages</a>
+                <ul className="dropdown">
+                  <li>
+                    <a href="./room-details.html">Room Details</a>
+                  </li>
+                  <li>
+                    <a href="#">Deluxe Room</a>
+                  </li>
+                  <li>
+                    <a href="#">Family Room</a>
+                  </li>
+                  <li>
+                    <a href="#">Premium Room</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./blog.html">News</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="mobile-menu-wrap"></div>
+          <div className="top-social">
+            <a href="#">
+              <i className="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i className="fa fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i className="fa fa-tripadvisor"></i>
+            </a>
+            <a href="#">
+              <i className="fa fa-instagram"></i>
+            </a>
+          </div>
+          <ul className="top-widget">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <i className="fa fa-phone"></i> (12) 345 67890990
             </li>
             <li>
-              <NavLink to="/contact">Contact Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/gallery">Gallery</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About Us</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="/team">Team</NavLink>
+              <i className="fa fa-envelope"></i> info.colorlib@gmail.com
             </li>
           </ul>
-        </nav>
-        <div style={{ padding: "1rem" }}>
+        </div>
+        {/* <!-- Offcanvas Menu Section End --> */}
+
+        <Header />
+        <div style={{}}>
           <Outlet />
         </div>
       </div>
