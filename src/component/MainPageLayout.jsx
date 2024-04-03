@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "./Header";
 // import "bootstrap/dist/css/bootstrap.css";
 
@@ -27,15 +27,15 @@ export default function MainPageLayout() {
               <div className="flag-dropdown">
                 <ul>
                   <li>
-                    <a href="#">Zi</a>
+                    <a href="/">Zi</a>
                   </li>
                   <li>
-                    <a href="#">Fr</a>
+                    <a href="/">Fr</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <a href="" className="bk-btn bk-btn-switch">
+            <a href="/" className="bk-btn bk-btn-switch">
               Booking Now
             </a>
           </div>
@@ -57,13 +57,13 @@ export default function MainPageLayout() {
                     <a href="./room-details.html">Room Details</a>
                   </li>
                   <li>
-                    <a href="#">Deluxe Room</a>
+                    <a href="/">Deluxe Room</a>
                   </li>
                   <li>
-                    <a href="#">Family Room</a>
+                    <a href="/">Family Room</a>
                   </li>
                   <li>
-                    <a href="#">Premium Room</a>
+                    <a href="/">Premium Room</a>
                   </li>
                 </ul>
               </li>
@@ -77,16 +77,16 @@ export default function MainPageLayout() {
           </nav>
           <div id="mobile-menu-wrap"></div>
           <div className="top-social">
-            <a href="#">
+            <a href="/">
               <i className="fa fa-facebook"></i>
             </a>
-            <a href="#">
+            <a href="/">
               <i className="fa fa-twitter"></i>
             </a>
-            <a href="#">
+            <a href="/">
               <i className="fa fa-tripadvisor"></i>
             </a>
-            <a href="#">
+            <a href="/">
               <i className="fa fa-instagram"></i>
             </a>
           </div>

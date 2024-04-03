@@ -26,7 +26,7 @@ export default function About() {
                   rental, resort, apartment, guest house, or tree house, we’ve
                   got you covered.
                 </p>
-                <a href="#" className="primary-btn about-btn">
+                <a href="/" className="primary-btn about-btn">
                   Read More
                 </a>
               </div>
