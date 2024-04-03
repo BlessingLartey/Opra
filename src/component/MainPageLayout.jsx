@@ -35,7 +35,7 @@ export default function MainPageLayout() {
                 </ul>
               </div>
             </div>
-            <a href="#" className="bk-btn">
+            <a href="" className="bk-btn bk-btn-switch">
               Booking Now
             </a>
           </div>

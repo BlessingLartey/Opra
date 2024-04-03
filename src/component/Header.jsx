@@ -22,20 +22,20 @@ function Header() {
               <div className="col-lg-6">
                 <div className="tn-right">
                   <div className="top-social">
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-facebook"></i>
                     </a>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-tripadvisor"></i>
                     </a>
-                    <a href="#">
+                    <a href="/">
                       <i className="fa fa-instagram"></i>
                     </a>
                   </div>
-                  <a href="#" className="bk-btn">
+                  <a href="/" className="bk-btn">
                     Booking Now
                   </a>
                   <div className="language-option">
@@ -46,10 +46,10 @@ function Header() {
                     <div className="flag-dropdown">
                       <ul>
                         <li>
-                          <a href="#">Zi</a>
+                          <a href="/">Zi</a>
                         </li>
                         <li>
-                          <a href="#">Fr</a>
+                          <a href="/">Fr</a>
                         </li>
                       </ul>
                     </div>
@@ -74,7 +74,7 @@ function Header() {
                   <nav className="mainmenu">
                     <ul>
                       <li className="active">
-                        <a href="#">Home</a>
+                        <a href="./home">Home</a>
                       </li>
                       <li>
                         <a href="./gallery">Rooms</a>
@@ -92,10 +92,10 @@ function Header() {
                             <a href="./blog-details">Blog Details</a>
                           </li>
                           <li>
-                            <a href="#">Family Room</a>
+                            <a href="/">Family Room</a>
                           </li>
                           <li>
-                            <a href="#">Premium Room</a>
+                            <a href="/">Premium Room</a>
                           </li>
                         </ul>
                       </li>
